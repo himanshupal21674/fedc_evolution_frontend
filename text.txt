@@ -1,0 +1,15 @@
+Quets - 1 
+
+Solution-1
+
+ const fruits = ["Apple", "Banana", "Orange", "Mango", "Pineapple", "Grapes", "Strawberry", "Watermelon", "Peach", "Kiwi"];
+
+ function rearrangeFruits(fruits) {
+     const removedFruits = fruits.splice(-4)
+
+     fruits.unshift(...removedFruits);
+
+     return fruits;
+ }
+
+ console.log(rearrangeFruits(fruits));
